@@ -7,7 +7,15 @@
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```swift
+import Instantiatable
+
+final class MyViewController: UIViewController, InstantiatableFromStoryboard {}
+```
+
+```swift
+let controller = MyViewController.instantiate() // Load from Storyboard
+```
 
 ## Requirements
 
