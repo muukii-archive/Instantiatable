@@ -1,0 +1,8 @@
+use_frameworks!
+
+
+target 'Instantiatable_Tests', :exclusive => true do
+  pod 'Instantiatable', :path => '../'
+
+  
+end
