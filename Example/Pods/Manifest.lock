@@ -1,0 +1,14 @@
+PODS:
+  - Instantiatable (0.1.0)
+
+DEPENDENCIES:
+  - Instantiatable (from `../`)
+
+EXTERNAL SOURCES:
+  Instantiatable:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Instantiatable: 0cd4d13682e067a2c9232640e701862af81e0b61
+
+COCOAPODS: 0.39.0

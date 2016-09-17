@@ -39,7 +39,7 @@ extension InstantiatableFromXIB where Self: UIViewController {
     
     public static func instantiate() -> Self {
         
-        return self.init(nibName: String(self), bundle: NSBundle(forClass: self))
+        return self.init(nibName: String(describing: self), bundle: Bundle(for: self))
     }
 }
 
@@ -47,14 +47,14 @@ extension InstantiatableFromXIB where Self: UIView {
     
     public static func instantiate() -> Self {
         
-        return UINib(nibName: String(self), bundle: NSBundle(forClass: self)).instantiateWithOwner(nil, options: nil).first! as! Self
+        return UINib(nibName: String(describing: self), bundle: Bundle(for: self)).instantiate(withOwner: nil, options: nil).first! as! Self
     }
 }
 
 extension InstantiatableFromStoryboard where Self: UIViewController {
     
     public static func instantiate() -> Self {
-        let storyboard = UIStoryboard(name: String(self), bundle: NSBundle(forClass: self))
+        let storyboard = UIStoryboard(name: String(describing: self), bundle: Bundle(for: self))
         return storyboard.instantiateInitialViewController() as! Self
     }
 }
