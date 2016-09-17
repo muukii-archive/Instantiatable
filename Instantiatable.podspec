@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Instantiatable"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "Instantiate from XIB or Storyboard"
   s.description      = <<-DESC
   Type-safe Instantiate from XIB or Storyboard.
