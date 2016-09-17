@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/Instantiatable.svg?style=flat)](http://cocoapods.org/pods/Instantiatable)
 [![License](https://img.shields.io/cocoapods/l/Instantiatable.svg?style=flat)](http://cocoapods.org/pods/Instantiatable)
 [![Platform](https://img.shields.io/cocoapods/p/Instantiatable.svg?style=flat)](http://cocoapods.org/pods/Instantiatable)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## Usage
 
