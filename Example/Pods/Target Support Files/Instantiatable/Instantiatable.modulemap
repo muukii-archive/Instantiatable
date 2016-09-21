@@ -1,6 +1,0 @@
-framework module Instantiatable {
-  umbrella header "Instantiatable-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Instantiatable"
-  s.version          = "0.2.0"
+  s.version          = "0.3.0"
   s.summary          = "Instantiate from XIB or Storyboard"
   s.description      = <<-DESC
   Type-safe Instantiate from XIB or Storyboard.
@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Instantiatable/Classes/**/*'
+  s.source_files = 'Instantiatable/**/*'
 end

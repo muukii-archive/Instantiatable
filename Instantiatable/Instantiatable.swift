@@ -47,7 +47,11 @@ extension InstantiatableFromXIB where Self: UIView {
     
     public static func instantiate() -> Self {
         
-        return UINib(nibName: String(describing: self), bundle: Bundle(for: self)).instantiate(withOwner: nil, options: nil).first! as! Self
+        return nib.instantiate(withOwner: nil, options: nil).first! as! Self
+    }
+    
+    public static var nib: UINib {
+        return UINib(nibName: String(describing: self), bundle: Bundle(for: self))
     }
 }
 

@@ -1,6 +1,0 @@
-framework module Pods_Instantiatable_Tests {
-  umbrella header "Pods-Instantiatable_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
