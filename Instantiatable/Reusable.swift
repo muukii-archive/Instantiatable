@@ -82,7 +82,7 @@ public extension UITableView {
      except when your type is in a variable and cannot be determined at compile time.
      - seealso: `dequeueReusableCellWithIdentifier(_:,forIndexPath:)`
      */
-    final func dequeueReusableCell<T: UITableViewCell>(indexPath: NSIndexPath, cellType: T.Type = T.self) -> T where T: Reusable {
+    final func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath, cellType: T.Type = T.self) -> T where T: Reusable {
         guard let cell = self.dequeueReusableCell(withIdentifier: cellType.reuseIdentifier, for: indexPath as IndexPath) as? T else {
             fatalError(
                 "Failed to dequeue a cell with identifier \(cellType.reuseIdentifier) matching type \(cellType.self). "
@@ -175,7 +175,7 @@ public extension UICollectionView {
      except when your type is in a variable and cannot be determined at compile time.
      - seealso: `dequeueReusableCellWithReuseIdentifier(_:,forIndexPath:)`
      */
-    final func dequeueReusableCell<T: UICollectionViewCell>(indexPath: NSIndexPath, cellType: T.Type = T.self) -> T where T: Reusable {
+    final func dequeueReusableCell<T: UICollectionViewCell>(indexPath: IndexPath, cellType: T.Type = T.self) -> T where T: Reusable {
         guard let cell = self.dequeueReusableCell(withReuseIdentifier: cellType.reuseIdentifier, for: indexPath as IndexPath) as? T else {
             fatalError(
                 "Failed to dequeue a cell with identifier \(cellType.reuseIdentifier) matching type \(cellType.self). "
@@ -224,7 +224,7 @@ public extension UICollectionView {
      - seealso: `dequeueReusableSupplementaryViewOfKind(_:,withReuseIdentifier:,forIndexPath:)`
      */
     final func dequeueReusableSupplementaryView<T: UICollectionReusableView>
-        (elementKind: String, indexPath: NSIndexPath, viewType: T.Type = T.self) -> T where T: Reusable {
+        (elementKind: String, indexPath: IndexPath, viewType: T.Type = T.self) -> T where T: Reusable {
         let view = self.dequeueReusableSupplementaryView(ofKind: elementKind, withReuseIdentifier: viewType.reuseIdentifier, for: indexPath as IndexPath)
         guard let typedView = view as? T else {
             fatalError(
